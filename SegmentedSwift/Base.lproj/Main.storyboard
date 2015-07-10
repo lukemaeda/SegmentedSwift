@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="7706" systemVersion="14E46" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="vXZ-lx-hvc">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7703"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="ufC-wZ-h7g">
+            <objects>
+                <viewController id="vXZ-lx-hvc" customClass="ViewController" customModule="SegmentedSwift" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="jyV-Pf-zRb"/>
+                        <viewControllerLayoutGuide type="bottom" id="2fi-mo-0CV"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="kh9-bI-dsS">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <segmentedControl opaque="NO" tag="10" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="LOq-op-fe8">
+                                <rect key="frame" x="15" y="213" width="288" height="29"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="28" id="Myb-1D-HOt"/>
+                                </constraints>
+                                <segments>
+                                    <segment title="First"/>
+                                    <segment title="Second"/>
+                                    <segment title="Third"/>
+                                </segments>
+                                <connections>
+                                    <action selector="lbSegment:" destination="vXZ-lx-hvc" eventType="valueChanged" id="Pde-GF-hQs"/>
+                                </connections>
+                            </segmentedControl>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="通常" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eTn-pc-Yj3">
+                                <rect key="frame" x="15" y="184" width="34" height="21"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="21" id="onD-pM-p56"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="ボタンとして使用" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="aXi-Ms-T3U">
+                                <rect key="frame" x="16" y="249" width="136" height="21"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="21" id="3DD-kp-15L"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <segmentedControl opaque="NO" tag="20" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" momentary="YES" translatesAutoresizingMaskIntoConstraints="NO" id="evc-p1-dnX">
+                                <rect key="frame" x="15" y="278" width="288" height="29"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="28" id="Zbj-Xl-EAh"/>
+                                </constraints>
+                                <segments>
+                                    <segment title="1st"/>
+                                    <segment title="2st"/>
+                                    <segment title="3st"/>
+                                </segments>
+                                <connections>
+                                    <action selector="lbSegment:" destination="vXZ-lx-hvc" eventType="valueChanged" id="4ZH-KD-JBH"/>
+                                </connections>
+                            </segmentedControl>
+                            <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="XWd-f4-YDv">
+                                <rect key="frame" x="15" y="352" width="289" height="29"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="28" id="03Y-EE-wXf"/>
+                                </constraints>
+                                <segments>
+                                    <segment title="" image="z001_24.png"/>
+                                    <segment title="Second"/>
+                                </segments>
+                            </segmentedControl>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="First" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qEp-3H-bq2">
+                                <rect key="frame" x="16" y="126" width="288" height="29"/>
+                                <color key="backgroundColor" red="0.40000000600000002" green="1" blue="0.40000000600000002" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="29" id="aD7-pZ-9Fp"/>
+                                    <constraint firstAttribute="width" constant="288" id="fdM-ug-tda"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="ArialRoundedMTBold" family="Arial Rounded MT Bold" pointSize="25"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="XWd-f4-YDv" firstAttribute="top" secondItem="evc-p1-dnX" secondAttribute="bottom" constant="46" id="0Oo-zc-vBk"/>
+                            <constraint firstItem="LOq-op-fe8" firstAttribute="leading" secondItem="evc-p1-dnX" secondAttribute="leading" id="F7N-ZL-UAQ"/>
+                            <constraint firstItem="aXi-Ms-T3U" firstAttribute="top" secondItem="LOq-op-fe8" secondAttribute="bottom" constant="8" symbolic="YES" id="OzK-nk-sjr"/>
+                            <constraint firstItem="eTn-pc-Yj3" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leadingMargin" constant="-1" id="PU2-Cy-WZB"/>
+                            <constraint firstItem="LOq-op-fe8" firstAttribute="top" secondItem="eTn-pc-Yj3" secondAttribute="bottom" constant="8" symbolic="YES" id="Pig-ZI-bAa"/>
+                            <constraint firstItem="aXi-Ms-T3U" firstAttribute="leading" secondItem="qEp-3H-bq2" secondAttribute="leading" id="QbT-RW-qIh"/>
+                            <constraint firstItem="2fi-mo-0CV" firstAttribute="top" secondItem="XWd-f4-YDv" secondAttribute="bottom" constant="188" id="Qi7-Rz-hcD"/>
+                            <constraint firstItem="evc-p1-dnX" firstAttribute="trailing" secondItem="LOq-op-fe8" secondAttribute="trailing" id="Rdt-A9-Hjn"/>
+                            <constraint firstItem="qEp-3H-bq2" firstAttribute="top" secondItem="jyV-Pf-zRb" secondAttribute="bottom" constant="106" id="UAX-j5-lVj"/>
+                            <constraint firstItem="evc-p1-dnX" firstAttribute="centerX" secondItem="XWd-f4-YDv" secondAttribute="centerX" id="ZYY-HC-y8E"/>
+                            <constraint firstItem="LOq-op-fe8" firstAttribute="leading" secondItem="eTn-pc-Yj3" secondAttribute="leading" id="bRj-0R-qXO"/>
+                            <constraint firstItem="evc-p1-dnX" firstAttribute="top" secondItem="aXi-Ms-T3U" secondAttribute="bottom" constant="8" symbolic="YES" id="d93-V3-u1G"/>
+                            <constraint firstItem="qEp-3H-bq2" firstAttribute="trailing" secondItem="kh9-bI-dsS" secondAttribute="trailingMargin" id="gg0-c4-CSo"/>
+                            <constraint firstItem="XWd-f4-YDv" firstAttribute="leading" secondItem="evc-p1-dnX" secondAttribute="leading" id="mOg-QV-4r7"/>
+                            <constraint firstItem="aXi-Ms-T3U" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leadingMargin" id="om9-H3-0PD"/>
+                            <constraint firstItem="eTn-pc-Yj3" firstAttribute="top" secondItem="qEp-3H-bq2" secondAttribute="bottom" constant="29" id="uX6-ju-pWf"/>
+                            <constraint firstItem="XWd-f4-YDv" firstAttribute="trailing" secondItem="qEp-3H-bq2" secondAttribute="trailing" id="uis-Hj-HiO"/>
+                        </constraints>
+                    </view>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
+                    <connections>
+                        <outlet property="lbSegment" destination="qEp-3H-bq2" id="moD-LZ-XWr"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="285" y="302"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="z001_24.png" width="24" height="24"/>
+    </resources>
+</document>
